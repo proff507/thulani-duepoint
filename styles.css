@@ -1,0 +1,236 @@
+* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--e-global-color-53d224c);
+  color: #333333;
+}
+
+a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+/* Header */
+
+
+
+av ul {
+  display: flex;
+  list-style: none;
+  
+}
+
+nav a {
+  color: #fff;
+
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+nav a:hover {
+  background: #2EC3CF;
+}
+
+/* Hero */
+.hero {
+  background: url("image/a-dramatic-cinematic-portrait-of-a-disti_JG2fAk09SaWlLQnEN3Tvcg_HIB5Yj5-SnaW8DdI03to3g.jpeg") no-repeat center center/cover;
+  padding: 100px 20px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+h1{
+
+  color: #fff;
+}
+p
+{
+  color: #ffffff;
+}
+
+h3 
+{
+  color: #cccccc;
+  align-content: center;
+  padding-bottom: 60px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+h2
+{
+  color: #fdfdfd;
+}
+
+
+.btn {
+  background: #2EC3CF;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+ .btn a
+ {
+  transition: background 0.3s ease;}
+.btn a:hover
+{
+   background: #680d0d;
+}
+
+/* Features */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 60px 20px;
+  background: #151515
+}
+
+.feature-card {
+  background:  #505253;
+  padding: 20px;
+  border: 1px solid #080808;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Courses */
+.courses {
+  padding: 60px 20px;
+  background: #353234;
+  text-align: center;
+}
+
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.course-card {
+  background: #2e2828;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+
+
+.course-card .price {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #0073e6;
+  font-weight: bold;
+}
+
+/* Events */
+.events {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.event-card {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background: #f3f3f3;
+  padding: 20px;
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+
+/* Footer */
+.footer {
+    background: #0d0d0d;
+    color: #bbb;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 1rem;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-links a,
+  .footer-email a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .footer-links a:hover,
+  .footer-email a:hover {
+    color: #fff;
+  }
+
+  /* Responsive: Stack vertically on small screens */
+  @media (max-width: 600px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    .footer-links {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+
+.courses {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.course-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.course-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap; /* Makes it responsive */
+}
+
+
